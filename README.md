@@ -7,9 +7,8 @@
 ![image](https://github.com/Marce-ts/TomotoHighPredict/assets/80326340/358e59c9-e2ab-4723-8b7a-049726addfe7)
 ![image](https://github.com/Marce-ts/TomotoHighPredict/assets/80326340/387aa223-7362-407d-9e5f-1d9215a50836)
 # 如何测试
-rnn+cnn部分和lstm部分分别在对应目录下
-rnn+cnn部分测试：
- · 图片训练代码读入图片数据，图片数据下载链接http://47.94.139.248:24193/down/79Dgkl4nFbnT.zip
- · 图片特征提取代码读入模型文件，输出图片特征（excel形式）
- · 训练代码读入final_data，输出模型文件，测试预测效果代码在训练代码的注释中。
+ · 图片训练代码读入图片数据，输出模型（pic_model.pth），图片数据下载链接http://47.94.139.248:24193/down/79Dgkl4nFbnT.zip
+ · 图片特征提取代码读入模型文件，输出图片特征（excel形式），和传感器和测量数据拼接后成为最终数据（final_data）
+ · data_make模块读入final_data，划分为组，并将这些组打乱后保存下来（labels_vector_14.npy、data_vector_14.npy、raw_vector_1.npy）
+ · 训练代码读入data_make保存的数据，输出模型文件(model_vector14_1.npy)，测试预测效果代码在训练代码的注释中。
 
